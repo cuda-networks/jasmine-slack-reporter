@@ -1,0 +1,21 @@
+{
+  "name": "jasmine-slack-reporter",
+  "version": "1.0.1",
+  "description": "Send jasmine2 / protractor results to slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/best4test/jasmine-slack-reporter.git"
+  },
+  "keywords": [
+    "jasmine",
+    "protractor",
+    "reporter",
+    "slack"
+  ],
+  "author": "Sebastian <sebastian@best4test.com> (http://best4test.com)",
+  "license": "ISC"
+}

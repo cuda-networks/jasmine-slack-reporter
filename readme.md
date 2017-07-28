@@ -12,12 +12,10 @@ Add to conf.js file
         var browserName = config.capabilities.browserName;
         jasmine.getEnv().addReporter(new webRep.WebReporter({
           projectName:'Project 1',
-          module:'Module 1',
-          url: 'http://demo.qaconsole.com/testruns',
+          module:'Module 1',          
           environment : 'Stage',
-          info : {
-            "browserName" : config.capabilities.browserName
-          }
+          slackUrl : 'https://hooks.slack.com/services/ASDF1234/ASDF1234/ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+          channel : '#testChannel'
         }));
     }); 
 }

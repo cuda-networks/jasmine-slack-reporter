@@ -11,8 +11,7 @@ Add to conf.js file
     browser.getProcessedConfig().then(function(config) {
         var browserName = config.capabilities.browserName;
         jasmine.getEnv().addReporter(new webRep.WebReporter({
-          projectName:'Project 1',
-          module:'Module 1',          
+          projectName:'Project 1', 
           environment : 'Stage',
           slackUrl : 'https://hooks.slack.com/services/ASDF1234/ASDF1234/ABCDEFGHIJKLMNOPQRSTUVWXYZ',
           channel : '#testChannel'
@@ -32,10 +31,10 @@ const webRep = require('jasmine-slack-reporter');
 const jasmine = new Jasmine();
 
 jasmine.addReporter(new webRep.WebReporter({
-        projectName:'API - Jasmine',
-        module:'API',
-        url: 'http://demo.qaconsole.com/testruns',
-        environment : 'Production',        
+        projectName:'Project 1', 
+        environment : 'Stage',
+        slackUrl : 'https://hooks.slack.com/services/ASDF1234/ASDF1234/ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        channel : '#testChannel'       
       }));
 
 jasmine.loadConfigFile('./spec/support/jasmine.json'); // load jasmine.json configuration

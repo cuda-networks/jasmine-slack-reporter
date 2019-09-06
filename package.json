@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nnguyen-cuda/jasmine-slack-reporter.git"
+    "url": "https://github.com/best4test/jasmine-slack-reporter.git"
   },
   "keywords": [
     "jasmine",

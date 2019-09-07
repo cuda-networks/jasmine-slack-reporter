@@ -49,7 +49,7 @@ exports.WebReporter = function(options) {
 			{
 				"pretext": pretext,
 				"text": text,
-				"color": color
+				"color": color,
 				"title": "Detailed test results",
 				"title_link": self.url,
 				"text": "Click link to view detailed test run"

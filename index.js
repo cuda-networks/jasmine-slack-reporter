@@ -39,14 +39,15 @@ exports.WebReporter = function(options) {
 		testRun.endTime = new Date();
 		var request = require('request');
 		var pretext = testRun.projectName + " -->>  " + testRun.status.toUpperCase();
-		var text = 'Environment: ' + testRun.environment.toUpperCase() + '  -->> Tests passed: ' + testPassed + '/' + testTotal;
+		var text = 'Environment: ' + testRun.environment.toUpperCase() + '  -->> Tests passed: ' + testPassed + '/' + testTotal + \n +
+		    self.url;
 		var color = 'danger';
 		if (testRun.status === 'passed')
 		{
 			color = 'good';
 		}
 		var attachments = [{"pretext":pretext,"text":text,"color":color}];
-		var payload = {"channel": self.channel , "username": "Hennifer Lopez","attachments":attachments, "message":self.url }
+		var payload = {"channel": self.channel , "username": "Hennifer Lopez","attachments":attachments}
 		request.post(self.slackUrl,
 			{json: true, body: payload},
 		 function(err,res,body){

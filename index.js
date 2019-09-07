@@ -51,8 +51,7 @@ exports.WebReporter = function(options) {
 				"text": text,
 				"color": color,
 				"title": "Detailed test results",
-				"title_link": self.url,
-				"text": "Click link to view detailed test run"
+				"title_link": self.url
 			}
 		];
 		var payload = {"channel": self.channel , "username": "Hennifer Lopez","attachments":attachments}

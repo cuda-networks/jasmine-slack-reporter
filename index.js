@@ -39,7 +39,7 @@ exports.WebReporter = function(options) {
 		testRun.endTime = new Date();
 		var request = require('request');
 		var pretext = testRun.projectName + " -->>  " + testRun.status.toUpperCase();
-		var text = 'Environment: ' + testRun.environment.toUpperCase() + '  -->> Tests passed: ' + testPassed + '/' + testTotal + '  ' + self.url;
+		var text = 'Environment: ' + testRun.environment.toUpperCase() + '  -->> Tests passed: ' + testPassed + '/' + testTotal;
 		var color = 'danger';
 		if (testRun.status === 'passed')
 		{

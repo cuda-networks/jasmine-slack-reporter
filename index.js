@@ -46,7 +46,7 @@ exports.WebReporter = function(options) {
 			color = 'good';
 		}
 		var attachments = [{"pretext":pretext,"text":text,"color":color}];
-		var payload = {"channel": self.channel , "username": "Hennifer Lopez","attachments":attachments, "Job URL":self.url }
+		var payload = {"channel": self.channel , "username": "Hennifer Lopez","attachments":attachments, "message":self.url }
 		request.post(self.slackUrl,
 			{json: true, body: payload},
 		 function(err,res,body){

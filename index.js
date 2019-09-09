@@ -54,7 +54,7 @@ exports.WebReporter = function(options) {
 				"title_link": self.url
 			}
 		];
-		var payload = {"channel": self.channel , "username": "Test Bot","attachments":attachments}
+		var payload = {"channel": self.channel , "username": "FIR Test Bot","attachments":attachments}
 		request.post(self.slackUrl,
 			{json: true, body: payload},
 		 function(err,res,body){
